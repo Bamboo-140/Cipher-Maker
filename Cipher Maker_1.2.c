@@ -5,13 +5,13 @@
 #include <stdlib.h>
 #define STAR "\t\t*******************************************************"
 
-void number(int length);    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄÊı×ÖÃÜÂë 1
-void lowerchar(int length);    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄĞ¡Ğ´×ÖÄ¸ÃÜÂë 2
-void upperchar(int length);    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄ´óĞ´×ÖÄ¸ÃÜÂë 3
-void lower_number(int length);    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄĞ¡Ğ´×ÖÄ¸ºÍÊı×ÖÃÜÂë 4
-void upper_number(int length);    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄ´óĞ´×ÖÄ¸ºÍÊı×ÖÃÜÂë 5
-void lower_upper_number(int length);    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄĞ¡Ğ´×ÖÄ¸ºÍÊı×ÖÃÜÂë 6
-void allchar(int length);    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄËùÓĞ×Ö·ûµÄÃÜÂë 7
+void number(int length);    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„æ•°å­—å¯†ç  1
+void lowerchar(int length);    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„å°å†™å­—æ¯å¯†ç  2
+void upperchar(int length);    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„å¤§å†™å­—æ¯å¯†ç  3
+void lower_number(int length);    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„å°å†™å­—æ¯å’Œæ•°å­—å¯†ç  4
+void upper_number(int length);    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„å¤§å†™å­—æ¯å’Œæ•°å­—å¯†ç  5
+void lower_upper_number(int length);    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„å°å†™å­—æ¯å’Œæ•°å­—å¯†ç  6
+void allchar(int length);    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„æ‰€æœ‰å­—ç¬¦çš„å¯†ç  7
 
 int i,password;
 
@@ -23,10 +23,10 @@ int main(void)
     
     while( length != 0 )
     {
-        printf("\t\tÇëÊäÈëÃÜÂë³¤¶È(ÊäÈë0½áÊø):");
+        printf("\t\tè¯·è¾“å…¥å¯†ç é•¿åº¦(è¾“å…¥0ç»“æŸ):");
         while( scanf("%d",&length) != 1 || length < 0 )
         {
-            printf("\t\tÇëÊäÈëÕıÈ·µÄÃÜÂë³¤¶È(ÊäÈë0½áÊø):");
+            printf("\t\tè¯·è¾“å…¥æ­£ç¡®çš„å¯†ç é•¿åº¦(è¾“å…¥0ç»“æŸ):");
             getchar();
         }
         if ( length == 0 )
@@ -39,16 +39,16 @@ int main(void)
             system("cls");
             getchar();
             printf("%s",STAR);
-            printf("\n\t\tÇëÑ¡ÔñÃÜÂëÇ¿¶È:\n");
-            printf("\t\t\t\t1.Êı×Ö:\n");
-            printf("\t\t\t\t2.Ğ¡Ğ´×ÖÄ¸:\n");
-            printf("\t\t\t\t3.´óĞ´×ÖÄ¸:\n");
-            printf("\t\t\t\t4.Êı×Ö+Ğ¡Ğ´×ÖÄ¸:\n");
-            printf("\t\t\t\t5.Êı×Ö+´óĞ´×ÖÄ¸:\n");
-            printf("\t\t\t\t6.Êı×Ö+´óĞ´×ÖÄ¸+Ğ¡Ğ´×ÖÄ¸:\n");
-            printf("\t\t\t\t7.Êı×Ö+´óĞ´×ÖÄ¸+Ğ¡Ğ´×ÖÄ¸+ÌØÊâ·ûºÅ:\n"); 
+            printf("\n\t\tè¯·é€‰æ‹©å¯†ç å¼ºåº¦:\n");
+            printf("\t\t\t\t1.æ•°å­—:\n");
+            printf("\t\t\t\t2.å°å†™å­—æ¯:\n");
+            printf("\t\t\t\t3.å¤§å†™å­—æ¯:\n");
+            printf("\t\t\t\t4.æ•°å­—+å°å†™å­—æ¯:\n");
+            printf("\t\t\t\t5.æ•°å­—+å¤§å†™å­—æ¯:\n");
+            printf("\t\t\t\t6.æ•°å­—+å¤§å†™å­—æ¯+å°å†™å­—æ¯:\n");
+            printf("\t\t\t\t7.æ•°å­—+å¤§å†™å­—æ¯+å°å†™å­—æ¯+ç‰¹æ®Šç¬¦å·:\n"); 
             printf("%s\n",STAR);
-            printf("\n\t\tÇëÑ¡Ôñ:");
+            printf("\n\t\tè¯·é€‰æ‹©:");
             test = scanf("%d",&choice);
             if ( choice < 1 || choice > 7 )
                 test = 0;
@@ -77,7 +77,7 @@ int main(void)
             allchar(length);
             break;
         default :
-            printf("ÊäÈë´íÎó!\n");
+            printf("è¾“å…¥é”™è¯¯!\n");
             break;
         }
     }
@@ -87,18 +87,18 @@ int main(void)
 
 
 
-void number(int length)    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄÊı×ÖÃÜÂë 1
+void number(int length)    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„æ•°å­—å¯†ç  1
 {
 
     
-    srand(time(0));     /* Éú³ÉËæ»úÖÖ×Ó */
+    srand(time(0));     /* ç”Ÿæˆéšæœºç§å­ */
     
-    system("cls");    /* Çå³ıÆÁÄ» */
-    printf("\n\t\tÉú³É%dÎ»µÄÃÜÂëÎª£º",length);
+    system("cls");    /* æ¸…é™¤å±å¹• */
+    printf("\n\t\tç”Ÿæˆ%dä½çš„å¯†ç ä¸ºï¼š",length);
     for(i = 0;i < length;)
     {
-        password=rand()%128;    /* Ëæ»úÉú³É128ÒÔÄÚµÄÊı */
-        if ( password > 48 && password < 57 )   //ÕâÀï¿ØÖÆÊä³öµÄ×Ö·ûÊÇ·ñ·ûºÏÒªÇó
+        password=rand()%128;    /* éšæœºç”Ÿæˆ128ä»¥å†…çš„æ•° */
+        if ( password >= 48 && password <= 57 )   //è¿™é‡Œæ§åˆ¶è¾“å‡ºçš„å­—ç¬¦æ˜¯å¦ç¬¦åˆè¦æ±‚
         {
             printf("%c",password);
             i++;
@@ -109,40 +109,18 @@ void number(int length)    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄÊı×ÖÃÜÂë 1
     printf("\n");
 }
 
-void lowerchar(int length)    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄĞ¡Ğ´×ÖÄ¸ÃÜÂë 2
+void lowerchar(int length)    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„å°å†™å­—æ¯å¯†ç  2
 {
     
     
     srand(time(0));
     
-    system("cls");    /* Çå³ıÆÁÄ» */
-    printf("\n\t\tÉú³É%dÎ»µÄÃÜÂëÎª£º",length);
-    for(i = 0;i < length;)
-    {
-        password=rand()%128;
-        if ( password > 97 && password < 122 )   //ÕâÀï¿ØÖÆÊä³öµÄ×Ö·ûÊÇ·ñ·ûºÏÒªÇó
-        {
-            printf("%c",password);
-            i++;
-        } 
-    }
-    
-    printf("\n");
-    printf("\n");
-}
-
-void upperchar(int length)     //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄ´óĞ´×ÖÄ¸ÃÜÂë 3
-{
-    
-    
-    srand(time(0));
-    
-    system("cls");    /* Çå³ıÆÁÄ» */
-    printf("\n\t\tÉú³É%dÎ»µÄÃÜÂëÎª£º",length);
+    system("cls");    /* æ¸…é™¤å±å¹• */
+    printf("\n\t\tç”Ÿæˆ%dä½çš„å¯†ç ä¸ºï¼š",length);
     for(i = 0;i < length;)
     {
         password=rand()%128;
-        if ( password > 65 && password < 90 )   //ÕâÀï¿ØÖÆÊä³öµÄ×Ö·ûÊÇ·ñ·ûºÏÒªÇó
+        if ( password >= 97 && password <= 122 )   //è¿™é‡Œæ§åˆ¶è¾“å‡ºçš„å­—ç¬¦æ˜¯å¦ç¬¦åˆè¦æ±‚
         {
             printf("%c",password);
             i++;
@@ -153,18 +131,18 @@ void upperchar(int length)     //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄ´óĞ´×ÖÄ¸ÃÜÂë 3
     printf("\n");
 }
 
-void lower_number(int length)    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄĞ¡Ğ´×ÖÄ¸ºÍÊı×ÖÃÜÂë 4
+void upperchar(int length)     //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„å¤§å†™å­—æ¯å¯†ç  3
 {
     
     
     srand(time(0));
     
-    system("cls");    /* Çå³ıÆÁÄ» */
-    printf("\n\t\tÉú³É%dÎ»µÄÃÜÂëÎª£º",length);
-    for(i=0;i<length;)
+    system("cls");    /* æ¸…é™¤å±å¹• */
+    printf("\n\t\tç”Ÿæˆ%dä½çš„å¯†ç ä¸ºï¼š",length);
+    for(i = 0;i < length;)
     {
         password=rand()%128;
-        if ( ( password > 97 && password < 122 ) || ( password > 48 && password < 57 ) )   //ÕâÀï¿ØÖÆÊä³öµÄ×Ö·ûÊÇ·ñ·ûºÏÒªÇó
+        if ( password >= 65 && password <= 90 )   //è¿™é‡Œæ§åˆ¶è¾“å‡ºçš„å­—ç¬¦æ˜¯å¦ç¬¦åˆè¦æ±‚
         {
             printf("%c",password);
             i++;
@@ -175,18 +153,18 @@ void lower_number(int length)    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄĞ¡Ğ´×ÖÄ¸ºÍÊı×ÖÃÜÂë 4
     printf("\n");
 }
 
-void upper_number(int length)    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄ´óĞ´×ÖÄ¸ºÍÊı×ÖÃÜÂë 5
+void lower_number(int length)    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„å°å†™å­—æ¯å’Œæ•°å­—å¯†ç  4
 {
     
     
     srand(time(0));
     
-    system("cls");    /* Çå³ıÆÁÄ» */
-    printf("\n\t\tÉú³É%dÎ»µÄÃÜÂëÎª£º",length);
+    system("cls");    /* æ¸…é™¤å±å¹• */
+    printf("\n\t\tç”Ÿæˆ%dä½çš„å¯†ç ä¸ºï¼š",length);
     for(i=0;i<length;)
     {
         password=rand()%128;
-        if ( ( password > 65 && password < 90 ) || ( password > 48 && password < 57 ) )   //ÕâÀï¿ØÖÆÊä³öµÄ×Ö·ûÊÇ·ñ·ûºÏÒªÇó
+        if ( ( password >= 97 && password <= 122 ) || ( password >= 48 && password <= 57 ) )   //è¿™é‡Œæ§åˆ¶è¾“å‡ºçš„å­—ç¬¦æ˜¯å¦ç¬¦åˆè¦æ±‚
         {
             printf("%c",password);
             i++;
@@ -197,18 +175,18 @@ void upper_number(int length)    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄ´óĞ´×ÖÄ¸ºÍÊı×ÖÃÜÂë 5
     printf("\n");
 }
 
-void lower_upper_number(int length)    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄĞ¡Ğ´×ÖÄ¸ºÍÊı×ÖÃÜÂë 6
+void upper_number(int length)    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„å¤§å†™å­—æ¯å’Œæ•°å­—å¯†ç  5
 {
     
     
     srand(time(0));
     
-    system("cls");    /* Çå³ıÆÁÄ» */
-    printf("\n\t\tÉú³É%dÎ»µÄÃÜÂëÎª£º",length);
+    system("cls");    /* æ¸…é™¤å±å¹• */
+    printf("\n\t\tç”Ÿæˆ%dä½çš„å¯†ç ä¸ºï¼š",length);
     for(i=0;i<length;)
     {
         password=rand()%128;
-        if ( (( password > 97 && password < 122 ) || ( password > 48 && password < 57 )) || ( password > 65 && password < 90 ) )   //ÕâÀï¿ØÖÆÊä³öµÄ×Ö·ûÊÇ·ñ·ûºÏÒªÇó
+        if ( ( password >= 65 && password <= 90 ) || ( password >= 48 && password <= 57 ) )   //è¿™é‡Œæ§åˆ¶è¾“å‡ºçš„å­—ç¬¦æ˜¯å¦ç¬¦åˆè¦æ±‚
         {
             printf("%c",password);
             i++;
@@ -219,18 +197,40 @@ void lower_upper_number(int length)    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄĞ¡Ğ´×ÖÄ¸ºÍÊı×ÖÃÜÂë 6
     printf("\n");
 }
 
-void allchar(int length)    //´òÓ¡³öÖ¸¶¨³¤¶ÈµÄËùÓĞ×Ö·ûµÄÃÜÂë 7
+void lower_upper_number(int length)    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„å°å†™å­—æ¯å’Œæ•°å­—å¯†ç  6
 {
     
     
     srand(time(0));
     
-    system("cls");    /* Çå³ıÆÁÄ» */
-    printf("\n\t\tÉú³É%dÎ»µÄÃÜÂëÎª£º",length);
+    system("cls");    /* æ¸…é™¤å±å¹• */
+    printf("\n\t\tç”Ÿæˆ%dä½çš„å¯†ç ä¸ºï¼š",length);
     for(i=0;i<length;)
     {
         password=rand()%128;
-        if ( password > 32 && password <126 )   //ÕâÀï¿ØÖÆÊä³öµÄ×Ö·ûÊÇ·ñ·ûºÏÒªÇó
+        if ( (( password >= 97 && password <= 122 ) || ( password >= 48 && password <= 57 )) || ( password >= 65 && password <= 90 ) )   //è¿™é‡Œæ§åˆ¶è¾“å‡ºçš„å­—ç¬¦æ˜¯å¦ç¬¦åˆè¦æ±‚
+        {
+            printf("%c",password);
+            i++;
+        } 
+    }
+    
+    printf("\n");
+    printf("\n");
+}
+
+void allchar(int length)    //æ‰“å°å‡ºæŒ‡å®šé•¿åº¦çš„æ‰€æœ‰å­—ç¬¦çš„å¯†ç  7
+{
+    
+    
+    srand(time(0));
+    
+    system("cls");    /* æ¸…é™¤å±å¹• */
+    printf("\n\t\tç”Ÿæˆ%dä½çš„å¯†ç ä¸ºï¼š",length);
+    for(i=0;i<length;)
+    {
+        password=rand()%128;
+        if ( password >= 32 && password <= 126 )   //è¿™é‡Œæ§åˆ¶è¾“å‡ºçš„å­—ç¬¦æ˜¯å¦ç¬¦åˆè¦æ±‚
         {
             printf("%c",password);
             i++;
